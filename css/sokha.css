@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background-color: aliceblue;
+    text-align: center;
+}
+.wrapper{
+    width: 1170px;
+    margin:0 auto;
+}
+header{
+    height: 100px;
+    background: #262626;
+    width:100%;
+    z-index: 12;
+    position: fixed;
+}
+.logo{
+    width:27%;
+    float:left;
+    height: 70px;
+    margin-top: 8px;
+    margin-left: 40px;
+   
+}
+
+nav{
+    float:right;
+    line-height: 100px;
+}
+nav a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin: 0 10px;
+    color: #fff;
+}
+nav a:hover{
+    color: green;
+    font-size: larger;
+}
+main {
+    position: absolute;
+    width: 100%;
+    margin-top: 200px;
+}
+
+iframe{
+    margin-bottom: 50px;
+}
+.content1{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+#img{
+    width: 30%;
+    height: 80%;
+    justify-content: space-around;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: 20px;
+}
+.content1 h2{
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+    margin-top: 50px ;
+}
+
+
+footer{
+    position:relative;
+    width:100%;
+    background-color:hsl(216, 100%, 60%);
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 3330px;
+}
+
+footer .social_icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social_icon li, footer .menu li{
+    list-style: none;
+}
+
+footer .social_icon li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    
+}
+
+footer .menu li a{
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+}
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left:0;
+    width:100%;
+    height: 100px;
+    background: url(/image/hero_image/wave.png);
+    background-size: 1000px 100px;
+}
+footer .wave#wave1{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave 4s linear infinite; 
+}
+
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite; 
+}
+
+footer .wave#wave3{
+    z-index: 999;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite; 
+}
+
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite; 
+}
+@keyframes animateWave {
+    0%{
+        background-position-x:1000px;
+
+    }
+    100%{
+        background-position-x: 0px;
+    }
+    
+}
+
+@keyframes animateWave_02 {
+    0%{
+        background-position-x:0px;
+
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
